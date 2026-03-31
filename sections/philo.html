@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase | Philosophy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <nav class="glass-nav">
@@ -16,8 +18,8 @@
     </nav>
 
     <header class="hero-section">
-        <h1>Philosophy Books</h1>
-        <p class="disclaimer"><span>AI-Assisted:</span> Summaries are AI generated for now.</p>
+        <h1>Showcase </h1>
+        <p class="disclaimer"><span>AI-Assisted:</span> Some summaries are generated for rapid browsing.</p>
     </header>
 
     <main class="container">
@@ -29,5 +31,20 @@
                         <button class="view-btn" onclick="openImageModal('images/img1.jpg')">View Full</button>
                     </div>
                 </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Top Rated</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>The Metamorphosis</h3>
+                    <p class="author">Franz Kafka</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Metamorphosis')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Metamorphosis')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get on Daraz</a>
+                </div>
+            </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
