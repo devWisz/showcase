@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase | Philosophy</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
 <body>
 
     <nav class="glass-nav">
         <div class="nav-content">
-            <a href="index.html" class="logo">Showcase</a>
+            <a href="index.html" class="logo">Showcase</a> 
             <div class="nav-links">
                 <a href="#" class="read-more-btn">Read More</a>
             </div>
@@ -41,5 +43,86 @@
                         <button class="btn-primary" onclick="openModal('summary', 'The Metamorphosis')">Summary</button>
                         <button class="btn-secondary" onclick="openModal('review', 'The Metamorphosis')">Review</button>
                     </div>
+                    <a href="" target="_blank" class="daraz-link">Get on Daraz</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #ec4899;">
+                <div class="image-wrapper">
+                    <img src="" alt="The Stranger">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('images/img2.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Recommended</span>
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <h3>The Stranger</h3>
+                    <p class="author">Albert Camus</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Stranger')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Stranger')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get on Daraz</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #10b981;">
+                <div class="image-wrapper">
+                    <img src="" alt="Beyond Good and Evil">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('images/img3.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row"><span class="badge">Classic</span><span class="rating">★ 4.7</span></div>
+                    <h3>Beyond Good & Evil</h3>
+                    <p class="author">Friedrich Nietzsche</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'Beyond Good & Evil')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'Beyond Good & Evil')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get on Daraz</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #f59e0b;">
+                <div class="image-wrapper">
+                    <img src="" alt="The Myth of Sisyphus">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('images/img4.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row"><span class="badge">Deep Dive</span><span class="rating">★ 4.6</span></div>
+                    <h3>Myth of Sisyphus</h3>
+                    <p class="author">Albert Camus</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'Myth of Sisyphus')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'Myth of Sisyphus')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get on Daraz</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="contentModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody" class="modal-text"></div>
+            <button class="close-btn-rect" onclick="closeModal()">Close Content</button>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal-overlay img-view">
+        <div class="img-modal-container">
+            <img id="fullImage" src="" alt="">
+            <button class="close-btn-rect" onclick="closeImageModal()">Close Image</button>
+        </div>
+    </div> 
+    <script src="scripts.js"></script>
 </body>
 </html>
