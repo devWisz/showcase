@@ -1,3 +1,14 @@
+:root {
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --glass: rgba(255, 255, 255, 0.9);
+    --red-accent: #ef4444;  
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
     background-color: var(--bg);
     color: var(--text-main);
@@ -30,3 +41,16 @@ body {
     color: #000;
     font-weight: 700;
 }
+
+.read-more-btn {
+    text-decoration: none;
+    background: var(--red-accent);
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover { opacity: 0.8; transform: scale(1.05); }
