@@ -121,3 +121,59 @@ h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin: 10px 0 5
     font-weight: 700;
     font-size: 0.8rem;
 }
+.btn-primary { background: var(--accent); color: white; }
+.btn-secondary { background: #f1f5f9; color: var(--text-main); }
+
+.daraz-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-window {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.modal-text { text-align: left; margin: 20px 0; line-height: 1.7; color: #444; }
+
+.close-btn-rect {
+    background: var(--red-accent);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.img-modal-container { text-align: center; margin-top: 5vh; }
+#fullImage { max-width: 90%; max-height: 70vh; border-radius: 8px; margin-bottom: 20px; }
+
+@media (max-width: 480px) {
+    .book-grid { grid-template-columns: 1fr; }
+    .hero-section { padding-top: 100px; }
+} 
