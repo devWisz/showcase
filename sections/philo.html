@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <nav class="glass-nav">
         <div class="nav-content">
             <a href="index.html" class="logo">Showcase</a> 
@@ -17,10 +16,9 @@
             </div>
         </div>
     </nav>
-
     <header class="hero-section">
-        <h1>Showcase Library</h1>
-        <p class="disclaimer"><span>AI-Assisted:</span> Some summaries are generated for rapid browsing.</p>
+        <h1>Philosophy Books</h1>
+        <p class="disclaimer"><span>Notice : </span> Summaries are AI generated for better User Experience</p>
     </header>
 
     <main class="container">
@@ -47,11 +45,11 @@
                 </div>
             </div>
 
-            <div class="book-card" style="--accent: #ec4899;">
+            <div class="book-card" style="--accent: #6366f1;">
                 <div class="image-wrapper">
-                    <img src="" alt="The Stranger">
+                    <img src="images/meta2.jpg" alt="The Stranger">
                     <div class="image-overlay">
-                        <button class="view-btn" onclick="openImageModal('images/img2.jpg')">View Full</button>
+                        <button class="view-btn" onclick="openImageModal('images/meta2.jpg')">View Full</button>
                     </div>
                 </div>
                 <div class="card-content">
@@ -69,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="book-card" style="--accent: #b91010;">
+            <div class="book-card" style="--accent: #6366f1;;">
                 <div class="image-wrapper">
                     <img src="" alt="Beyond Good and Evil">
                     <div class="image-overlay">
@@ -78,7 +76,7 @@
                 </div>
                 <div class="card-content">
                     <div class="badge-row"><span class="badge">Classic</span><span class="rating">★ 4.7</span></div>
-                    <h3>Beyond Good & Evil</h3>
+                    <h3>Beyond Good and Evil</h3>
                     <p class="author">Friedrich Nietzsche</p>
                     <div class="action-buttons">
                         <button class="btn-primary" onclick="openModal('summary', 'Beyond Good & Evil')">Summary</button>
@@ -90,7 +88,6 @@
             </div>
         </div>
     </main>
-
     <div id="contentModal" class="modal-overlay">
         <div class="modal-window">
             <h2 id="modalTitle"></h2>
@@ -98,7 +95,6 @@
             <button class="close-btn-rect" onclick="closeModal()">Close Content</button>
         </div>
     </div>
-
     <div id="imageModal" class="modal-overlay img-view">
         <div class="img-modal-container">
             <img id="fullImage" src="" alt="">

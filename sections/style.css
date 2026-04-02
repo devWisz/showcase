@@ -1,5 +1,5 @@
 :root {
-    --bg: #f8fafc;
+    --bg: #f8fcfc;
     --card-bg: #ffffff;
     --text-main: #1e293b;
     --text-muted: #64748b;
@@ -16,7 +16,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.glass-nav {
+.glass-nav { 
     position: fixed;
     top: 0; width: 100%;
     z-index: 100;
@@ -176,4 +176,4 @@ h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin: 10px 0 5
 @media (max-width: 480px) {
     .book-grid { grid-template-columns: 1fr; }
     .hero-section { padding-top: 100px; }
-} 
+}
