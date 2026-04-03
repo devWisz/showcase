@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase | Self Help</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Showcase</a> 
+            <div class="nav-links">
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <h1>Self Help Books</h1>
+        <p class="disclaimer"><span>Notice : </span> Summaries are AI generated for better User Experience</p><br>
+                <p class="disclaimer"><span>Note: </span> Double click to view the full image of the book</p>
+    </header>
+
+    <main class="container">
+        <div class="book-grid">
+            <div class="book-card" style="--accent: #6366f1;">
+                <div class="image-wrapper">
+                    <img src="https://cdn.kobo.com/book-images/685e0632-a7f9-4661-bbea-116a03a9aea9/1200/1200/False/deep-work-2.jpg" alt="Metamorphosis">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://cdn.kobo.com/book-images/685e0632-a7f9-4661-bbea-116a03a9aea9/1200/1200/False/deep-work-2.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Top Rated</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>Deep Work</h3>
+                    <p class="author">Cal Newport</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Metamorphosis')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Metamorphosis')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #6366f1;">
+                <div class="image-wrapper">
+                    <img src="https://jamesclear.com/wp-content/uploads/2019/04/Atomic-Habits-image-e1556227442177.jpg" alt="The Stranger">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://jamesclear.com/wp-content/uploads/2019/04/Atomic-Habits-image-e1556227442177.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Recommended</span>
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <h3>Atomic Habits</h3>
+                    <p class="author">James Clear</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Stranger')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Stranger')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #6366f1;;">
+                <div class="image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/41N62t%20ANTL._SY445_SX342_ML2_.jpg" alt="Beyond Good and Evil">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://m.media-amazon.com/images/I/41N62t%20ANTL._SY445_SX342_ML2_.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row"><span class="badge">Classic</span><span class="rating">★ 4.7</span></div>
+                    <h3>The mountain is you</h3>
+                    <p class="author">Brianna Wiest</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'Beyond Good & Evil')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'Beyond Good & Evil')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div id="contentModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody" class="modal-text"></div>
+            <button class="close-btn-rect" onclick="closeModal()">Close Content</button>
+        </div>
+    </div>
+    <div id="imageModal" class="modal-overlay img-view">
+        <div class="img-modal-container">
+            <img id="fullImage" src="" alt="">
+            <button class="close-btn-rect" onclick="closeImageModal()">Close Image</button>
+        </div>
+    </div> 
+    <script src="self-help.js"></script>
+</body>
+</html> 
