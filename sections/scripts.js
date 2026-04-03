@@ -42,4 +42,4 @@ window.onclick = function(e) {
         closeModal();
         closeImageModal();
     }
-}  
+}
