@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase | Literature</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Showcase</a> 
+            <div class="nav-links">
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <h1>Literature Books</h1>
+        <p class="disclaimer"><span>Notice : </span> Summaries are AI generated for better User Experience</p><br>
+                <p class="disclaimer"><span>Note: </span> Double click to view the full image of the book and scroll down to close the content in summary section.</p>
+    </header>
+    <main class="container">
+        <div class="book-grid">
+            <div class="book-card" style="--accent: #6366f1;">
+                <div class="image-wrapper">
+                    <img src="https://th.bing.com/th/id/OIP.cnzk_oIELRN7SsQTHK6BiAHaL8?w=196&h=317&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Crime and Punishment">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://th.bing.com/th/id/OIP.cnzk_oIELRN7SsQTHK6BiAHaL8?w=196&h=317&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Top Rated</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>Crime and Punishment</h3>
+                    <p class="author">Fyodor Dostoevsky</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Metamorphosis')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Metamorphosis')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #6366f1;">
+                <div class="image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/71rpa1-kyvL.jpg" alt="1984">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://m.media-amazon.com/images/I/71rpa1-kyvL.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row">
+                        <span class="badge">Recommended</span>
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <h3>1984</h3>
+                    <p class="author">George Orwell</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'The Stranger')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'The Stranger')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book</a>
+                </div>
+            </div>
+
+            <div class="book-card" style="--accent: #6366f1;;">
+                <div class="image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/61GksaGzceL.jpg" alt="One Hundred Years of Solitude">
+                    <div class="image-overlay">
+                        <button class="view-btn" onclick="openImageModal('https://m.media-amazon.com/images/I/61GksaGzceL.jpg')">View Full</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="badge-row"><span class="badge">Classic</span><span class="rating">★ 4.7</span></div>
+                    <h3>One Hundred Years of Solitude</h3>
+                    <p class="author">Gabriel García Márquez</p>
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="openModal('summary', 'Beyond Good & Evil')">Summary</button>
+                        <button class="btn-secondary" onclick="openModal('review', 'Beyond Good & Evil')">Review</button>
+                    </div>
+                    <a href="" target="_blank" class="daraz-link">Get this book </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div id="contentModal" class="modal-overlay">
+        <div class="modal-window">
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody" class="modal-text"></div>
+            <button class="close-btn-rect" onclick="closeModal()">Close Content</button>
+        </div>
+    </div>
+    <div id="imageModal" class="modal-overlay img-view">
+        <div class="img-modal-container">
+            <img id="fullImage" src="" alt="">
+            <button class="close-btn-rect" onclick="closeImageModal()">Close Image</button>
+        </div>
+    </div> 
+    <script src="liter.js"></script>
+</body>
+</html>
