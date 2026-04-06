@@ -9,3 +9,26 @@ body{
     background:#ffffff;
     color:#111;
 }
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    border-bottom:1px solid #eee;
+}
+
+.logo{
+    font-weight:600;
+    font-size:20px;
+    color:#0b3d91;
+}
+
+nav a{
+    text-decoration:none;
+    padding:8px 16px;
+    border-radius:20px;
+    border:1px solid #0b3d91;
+    color:#0b3d91;
+    transition:0.3s;
+}
